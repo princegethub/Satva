@@ -47,7 +47,7 @@ function Projects() {
         backgroundImage:
           "url('https://static.lsabisaau.com/satva-living/images/bg/bg-white-3.png')",
       }}
-      className="h-auto w-full px-6  sm:px-8 pt-10 pb-24  max-w-full "
+      className="h-auto w-full   sm:px-8 pt-10 pb-24  max-w-full "
     >
 
         <h1 className="text-3xl sm:text-5xl font-serif font-semibold text-center text-[#8f5735]">

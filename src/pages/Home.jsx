@@ -24,11 +24,12 @@ const Home = () => {
             dreams into bespoke realities. Let us craft spaces that reflect your
             story with elegance and harmony.
           </p>
-          <button className="mt-6 bg-[#8f5735] hover:bg-[#754c38] text-white px-6 py-2 rounded-md cursor-pointer 
-  transition-all duration-300 transform hover:scale-105 shadow-md ">
-  Explore
-</button>
-
+          <button
+            className="mt-6 bg-[#8f5735] hover:bg-[#754c38] text-white px-6 py-2 rounded-md cursor-pointer 
+             transition-all duration-300 transform hover:scale-105 shadow-md "
+          >
+            Explore
+          </button>
         </div>
 
         {/* Image Gallery */}

@@ -77,7 +77,7 @@ export function FeaturedImageGallery() {
               active === imgelink ? "border-[#8f5735] scale-105" : "border-transparent"
             }`}
             alt="gallery-thumbnail"
-            data-aos="zoom-in"
+            // data-aos="zoom-in"
           />
         ))}
       </div>
