@@ -1,5 +1,5 @@
 import React from "react";
-import { FeaturedImageGallery } from "../components/HomeGallery";
+import { FeaturedImageGallery } from "@/components/HomeGallery";
 
 const Home = () => {
   return (

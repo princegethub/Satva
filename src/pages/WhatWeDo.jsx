@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import Areoplane from "../assets/Areoplane.png";
-import Stack from "../ReactBit/Stack";
+import Areoplane from "@assets/Areoplane.png";
+import Stack from "@/ReactBit/Stack";
 import { CheckCircle } from "lucide-react";
 
 const images = [

@@ -4,7 +4,7 @@
   import "slick-carousel/slick/slick-theme.css";
 
   import { ChevronLeft, ChevronRight } from "lucide-react";
-  import SpotlightCard from "../ReactBit/SpotLightCard";
+  import SpotlightCard from "@/ReactBit/SpotLightCard";
 
   const testimonials = [
     {

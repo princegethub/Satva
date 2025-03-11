@@ -1,6 +1,6 @@
 import React from "react";
-import AnimatedContent from "../ReactBit/AnimatedDiv";
-import CulturalGallery from "../ReactBit/CulturalGallery";
+import AnimatedContent from "@/ReactBit/AnimatedDiv";
+import CulturalGallery from "@/ReactBit/CulturalGallery";
 
 const Items = [
   {
