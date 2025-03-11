@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Logo from "@assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, Facebook, Instagram, Twitter } from "lucide-react";
-import Sidebar from "@/components/Sidebar";
+import Sidebar from "@/components/Sidebar"; 
+
 import SplitText from "../ReactBit/SplitText";
 
 // ✅ Navbar ke links ka data
