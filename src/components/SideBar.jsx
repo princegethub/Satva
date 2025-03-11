@@ -1,6 +1,6 @@
 import React from "react";
 import { X, Mail, Phone, Facebook, Instagram, Twitter } from "lucide-react";
-import Logo from "@assets/logo.png"; // ✅ Apna logo import karo
+import Logo from "@assets/logo.png"; //  ✅ Apna logo import karo
 
 const Sidebar = ({ menuOpen, setMenuOpen, navLinks, socialIcons }) => {
   return (
