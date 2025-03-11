@@ -1,7 +1,7 @@
 import React from "react";
 import { Home, Handshake, Wallet, Headset } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaHouzz } from "react-icons/fa";
-import SpotlightCard from "../ReactBit/SpotLightCard";
+import SpotlightCard from "@/ReactBit/SpotLightCard";
 
 function FuturePage() {
   return (
