@@ -297,7 +297,8 @@ class App {
   constructor(container, { items, bend, textColor = "#ffffff", borderRadius = 0, font = "bold 30px DM Sans" } = {}) {
     document.documentElement.classList.remove('no-js')
     this.container = container
-    this.scroll = { ease: 0.05, current: 0, target: 0, last: 0 }
+    this.scroll = { ease: 0.02, current: 0, target: 0, last: 0 }
+
     this.onCheckDebounce = debounce(this.onCheck, 200)
     this.createRenderer()
     this.createCamera()
@@ -392,7 +393,7 @@ class App {
   onTouchMove(e) {
     if (!this.isDown) return
     const x = e.touches ? e.touches[0].clientX : e.clientX
-    const distance = (this.start - x) * 0.05
+    const distance = (this.start - x) * 0.01
     this.scroll.target = this.scroll.position + distance
   }
   onTouchUp() {
@@ -400,7 +401,7 @@ class App {
     this.onCheck()
   }
   onWheel() {
-    this.scroll.target += 2
+    this.scroll.target += 0.8  // Pehle 2 tha, ab 0.3 kar diya slow effect ke liye
     this.onCheckDebounce()
   }
   onCheck() {
