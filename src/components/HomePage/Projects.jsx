@@ -1,6 +1,7 @@
 import React from "react";
 import AnimatedContent from "@/ReactBit/AnimatedDiv";
 import CulturalGallery from "@/ReactBit/CulturalGallery";
+import { Link } from "react-router-dom";
 
 const Items = [
   {
@@ -116,6 +117,7 @@ export function DefaultGallery() {
   return (
     <div className="grid  grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
       {data.map(({ imageLink, title, price, details }, index) => (
+        <Link to="/projects" className="group">
         <div
          data-aos="zoom-in"
           key={index}
@@ -153,6 +155,7 @@ export function DefaultGallery() {
             </button>
           </div>
         </div>
+        </Link>
       ))}
     </div>
   );

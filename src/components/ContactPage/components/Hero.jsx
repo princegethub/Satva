@@ -73,22 +73,22 @@ const Hero = () => {
                 <h3 className="md:text-3xl text-2xl font-semibold mb-6 text-gray-700">CONTACT US</h3>
                 <form className="space-y-4">
                     <div>
-                        <label className="block text-gray-700 font-semibold mb-2">First Name</label>
-                        <input type="text" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#8f5735]" />
+                        <label className="block text-gray-700  outline-none   font-semibold mb-2">First Name</label>
+                        <input type="text" className="w-full px-4 py-2 border border-[#8f5735] rounded-md focus:outline-none " />
                     </div>
                     <div>
-                        <label className="block text-gray-700 font-semibold mb-2">Phone Number</label>
-                        <input type="text" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#8f5735]" />
+                        <label className="block text-gray-700 outline-none   font-semibold mb-2">Phone Number</label>
+                        <input type="text" className="w-full px-4 py-2 border  border-[#8f5735] rounded-md focus:outline-none " />
                     </div>
                     <div>
-                        <label className="block text-gray-700 font-semibold mb-2">Email</label>
-                        <input type="email" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#8f5735]" />
+                        <label className="block text-gray-700 outline-none   font-semibold mb-2">Email</label>
+                        <input type="email" className="w-full px-4 py-2 border  border-[#8f5735] rounded-md focus:outline-none " />
                     </div>
                     <div>
-                        <label className="block text-gray-700 font-semibold mb-2">Message</label>
-                        <textarea className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#8f5735]" rows="4"></textarea>
+                        <label className="block text-gray-700  outline-none  font-semibold mb-2">Message</label>
+                        <textarea className="w-full px-4 py-2 border rounded-md  border-[#8f5735] focus:outline-none " rows="4"></textarea>
                     </div>
-                    <button type="submit" className="w-full px-6 py-3 bg-[#8f5735] text-white rounded-md font-semibold hover:bg-[#6e4427] transition duration-300">Submit</button>
+                    <button type="submit" className="w-full px-6 py-3 bg-[#8f5735] text-white rounded-md font-semibold hover:bg-[#6e4427] transition duration-300 cursor-pointer">Submit</button>
                 </form>
             </motion.div>
         </motion.div>

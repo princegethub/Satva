@@ -29,9 +29,9 @@ const Hero = () => {
       author: "By Admin",
       description:
         "Stay updated with the latest in interior design trends, expert tips, and creative ideas to elevate your spaces.",
-      likes: 306,
-      comments: 34,
-      shares: 122,
+      likes: 290,
+      comments: 29,
+      shares: 110,
     },
     {
       image:
@@ -41,9 +41,9 @@ const Hero = () => {
       author: "By Admin",
       description:
         "Stay updated with the latest in interior design trends, expert tips, and creative ideas to elevate your spaces.",
-      likes: 306,
-      comments: 34,
-      shares: 122,
+      likes: 340,
+      comments: 39,
+      shares: 140,
     },
     {
       image:
@@ -57,7 +57,32 @@ const Hero = () => {
       comments: 45,
       shares: 189,
     },
+    {
+      image:
+        "https://img.freepik.com/free-photo/gray-sofa-living-room-with-free-space_43614-893.jpg?t=st=1742907644~exp=1742911244~hmac=ab1fccb0e1a2f5101e16816d963344d89953a5420fd8379e8f965e8d663ad171&w=1380",
+      title: "Top Kitchen Design Ideas ....",
+      date: "Sep 10, 2021",
+      author: "By Admin",
+      description:
+        "Discover top kitchen design trends that bring both functionality and elegance to your home.",
+      likes: 230,
+      comments: 20,
+      shares: 89,
+    },
+    {
+      image:
+        "https://img.freepik.com/free-photo/living-room-mid-century-style-with-warm-colors-ai-generative_123827-23931.jpg?t=st=1742907583~exp=1742911183~hmac=976468f900909276266b5c586dd84b47d7c32fef188cd0f7e51999a3a6a7d37e&w=1480",
+      title: "DIY Home Improvement Tips ....",
+      date: "Oct 05, 2022",
+      author: "By Admin",
+      description:
+        "Explore easy-to-follow home improvement ideas that can transform your space.",
+      likes: 310,
+      comments: 25,
+      shares: 115,
+    },
   ];
+  
 
   return (
     <div ref={ref}>
