@@ -53,7 +53,7 @@ const blogItems = [
 ];
 
 function BlogPage() {
-  const [showAll, setShowAll] = useState(false);
+  const [showAll] = useState(false);
 
   // Show only 3 items initially in large screens
   const visibleItems = showAll ? blogItems : blogItems.slice(0, 3);

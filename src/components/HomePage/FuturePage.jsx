@@ -1,6 +1,6 @@
 import React from "react";
 import { FaPaintBrush, FaCouch, FaRulerCombined, FaLightbulb } from "react-icons/fa";
-import SpotlightCard from "@/ReactBit/SpotlightCard";
+import SpotlightCard from "../../ReactBit/SpotLightCard";
 
 const features = [
   {
