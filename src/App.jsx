@@ -11,6 +11,7 @@ import ContactPage from "./pages/ContactPage";
 import ProjectPage from "./pages/ProjectPage";
 import BlogPage from "./pages/BlogPage";
 
+import ScrolltoTop from "./components/ScrolltoTop";
 
 function App() {
   React.useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
       <Navbar />
       {/* <HeroPage/> */}
       {/* <AboutPage /> */}
+      <ScrolltoTop />
       <Routes>
         <Route path="/" element={<HeroPage />} />
         <Route path="/about" element={<AboutPage />} />

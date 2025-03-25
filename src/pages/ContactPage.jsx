@@ -4,6 +4,7 @@ const ContactPage = () => {
   return (
     <div>
       <Hero />
+      <Map />
     </div>
   )
 }
