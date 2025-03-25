@@ -5,6 +5,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import HeroPage from "./pages/HeroPage";
 import Navbar from "./components/HomePage/Navbar";
+import AboutPage from "./pages/AboutPage";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -22,8 +24,9 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <HeroPage/>
-
+      {/* <HeroPage/> */}
+      <AboutPage />
+      <Footer />
       
     </BrowserRouter>
   );
