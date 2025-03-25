@@ -60,7 +60,7 @@ function Projects() {
       </h1>
 
       {/* Responsive Gallery */}
-      <div className="relative w-full flex justify-center items-center mt-8">
+      <div className="relative  flex justify-center items-center mt-8 md:px-20 px-8">
         <DefaultGallery />
       </div>
     </div>
@@ -114,7 +114,7 @@ export function DefaultGallery() {
   ];
 
   return (
-    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+    <div className="grid  grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
       {data.map(({ imageLink, title, price, details }, index) => (
         <div
          data-aos="zoom-in"

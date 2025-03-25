@@ -8,7 +8,7 @@ const Banner = () => {
 
   return (
     <div className="relative -mt-20" ref={ref}>
-      <div className="relative h-[70vh] py-24 bg-fixed bg-center bg-cover" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/banner-1.jpg')" }}>
+      <div className="relative h-[70vh] overflow-hidden max-w-screen py-24 bg-fixed bg-center bg-cover" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/banner-1.jpg')" }}>
         <div className="absolute inset-0 flex items-center justify-center">
           <motion.div 
             className="bg-transparent bg-opacity-20 w-4/5 md:h-3/5 h-4/5 p-10 flex flex-col items-center justify-center border border-dashed border-[#c18847] rounded-md text-white hover:bg-[#c18847] transition-all duration-300"

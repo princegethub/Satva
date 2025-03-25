@@ -21,7 +21,7 @@ function HeroPage() {
       <BannerPic img="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=1000&auto=format&fit=crop&q=60" />
       <BlogPage />
       <Testimonials />
-      <Footer />
+      {/* <Footer /> */}
 
       {/* <FloatingButton /> */}
     </div>

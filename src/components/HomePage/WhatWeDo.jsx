@@ -117,7 +117,7 @@ function WhatWeDo() {
 
         {/* Right Side - Stack with Cards */}
         <div
-          className="relative md:w-1/2 flex justify-start items-start sm:justify-center sm:items-center -ml-10 sm:ml-0 mt-8 md:mt-0"
+          className="relative w-full md:w-1/2 flex justify-start items-start sm:justify-center sm:items-center -ml-10 sm:ml-0 mt-8 md:mt-0"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >

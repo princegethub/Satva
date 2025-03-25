@@ -8,6 +8,8 @@ import Navbar from "./components/HomePage/Navbar";
 import AboutPage from "./pages/AboutPage";
 import Footer from "./components/Footer";
 import ContactPage from "./pages/ContactPage";
+import ProjectPage from "./pages/ProjectPage";
+import BlogPage from "./pages/BlogPage";
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
         <Route path="/" element={<HeroPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/projects" element={<ProjectPage />} />
+        <Route path="/blog" element={<BlogPage/>} />
       </Routes>
       <Footer />
       
