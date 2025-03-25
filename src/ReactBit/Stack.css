@@ -20,3 +20,43 @@
   height: 100%;
   object-fit: cover;
 }
+
+.stack-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.card-rotate {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); */
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.card div {
+  padding: 12px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

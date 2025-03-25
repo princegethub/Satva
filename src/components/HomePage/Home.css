@@ -1,0 +1,20 @@
+
+
+@keyframes scroll {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+.bg-scroll-pattern {
+
+background-image: url('../../assets/HeroPattern.png');
+  background-size: 60% 100%;
+  /* rotate: 180deg; */
+  background-repeat: repeat-x;
+  animation: scroll 100s linear infinite;
+  opacity: 0.09;
+}

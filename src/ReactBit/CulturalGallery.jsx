@@ -321,8 +321,7 @@ class App {
     this.camera.position.z = 20
   }
   createScene() {
-    this.scene = new Transform()
-  }
+    this.scene = new Transform()  }
   createGeometry() {
     this.planeGeometry = new Plane(this.gl, {
       heightSegments: 50,

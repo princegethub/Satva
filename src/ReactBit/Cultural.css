@@ -12,8 +12,8 @@
 .card-spotlight {
   position: relative;
   border-radius: 1.5rem;
-  border: 1px solid #d4af37; /* Soft Gold Border */
-  background: linear-gradient(135deg, #ffffff 30%, #fff7e0 100%);
+  border: 1px solid #d4af37; 
+  /* background: linear-gradient(135deg, #ffffff 30%, #fff7e0 100%); */
   padding: 2rem;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
@@ -35,7 +35,7 @@
 /* Hover Effects */
 .card-spotlight:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(218, 165, 32, 0.3); 
+  /* box-shadow: 0 10px 25px rgba(218, 165, 32, 0.3);  */
 }
 
 .card-spotlight:hover::before {

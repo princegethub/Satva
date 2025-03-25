@@ -40,18 +40,18 @@ const Items = [
 
 
 
-function Projects() {
+function BlogPage() {
   return (
     <div
       style={{
         backgroundImage:
           "url('https://static.lsabisaau.com/satva-living/images/bg/bg-white-3.png')",
       }}
-      className="h-auto w-full   sm:px-8 pt-10 pb-24  max-w-full "
+      className=" md:h-[700px] w-full   sm:px-8 pt-10 pb-24  max-w-full "
     >
 
         <h1 className="text-3xl sm:text-5xl font-serif font-semibold text-center text-[#8f5735]">
-          Projects
+          Blogs & Articles
         </h1>
  
 
@@ -70,4 +70,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default BlogPage;

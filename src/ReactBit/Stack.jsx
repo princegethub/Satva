@@ -41,17 +41,62 @@ export default function Stack({
   cardDimensions = { width: 208, height: 208 },
   cardsData = [],
   animationConfig = { stiffness: 260, damping: 20 },
-  sendToBackOnClick = false
+  sendToBackOnClick = false,
 }) {
   const [cards, setCards] = useState(
     cardsData.length
       ? cardsData
       : [
-        { id: 1, img: "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?q=80&w=500&auto=format" },
-        { id: 2, img: "https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=500&auto=format" },
-        { id: 3, img: "https://images.unsplash.com/photo-1452626212852-811d58933cae?q=80&w=500&auto=format" },
-        { id: 4, img: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=500&auto=format" }
-      ]
+        {
+          id: 1,
+          img: "https://images.unsplash.com/photo-1593642532454-e1aafdf266af?q=80&w=500&auto=format", // Zee News Award Photo
+          title: "Zee News - Interior Design Award",
+          content:
+            "Recognized by Zee News for excellence in sustainable architecture and luxurious interior designs.",
+          link: "https://www.zee.com/news/satva-living-award", // Link to Zee News Page
+        },
+        {
+          id: 2,
+          img: "https://images.unsplash.com/photo-1581091870620-3c89f1d79572?q=80&w=500&auto=format", // Aaj Tak Article Photo
+          title: "Aaj Tak - Modern Interiors Feature",
+          content:
+            "Featured on Aaj Tak for our innovative approach to modern urban spaces and eco-friendly homes.",
+          link: "https://www.aajtak.in/design-news",
+        },
+        {
+          id: 3,
+          img: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=500&auto=format", // NDTV Article Photo
+          title: "NDTV - Innovation in Interior Design",
+          content:
+            "Covered by NDTV for transforming traditional interiors into smart, sustainable living spaces.",
+          link: "https://www.ndtv.com/interior-trends-2025",
+        },
+        {
+          id: 4,
+          img: "https://images.unsplash.com/photo-1534515725026-7c5283c17c48?q=80&w=500&auto=format", // India Today Recognition Photo
+          title: "India Today - Eco-Friendly Designs Recognition",
+          content:
+            "Acknowledged by India Today for pioneering innovations in eco-conscious home design.",
+          link: "https://www.indiatoday.in/eco-designs",
+        },
+        {
+          id: 5,
+          img: "https://images.unsplash.com/photo-1556912167-f556f1f39fdf?q=80&w=500&auto=format", // Hindustan Times Feature Photo
+          title: "Hindustan Times - Top Sustainable Designs",
+          content:
+            "Featured in Hindustan Times for redefining sustainable living with cutting-edge designs.",
+          link: "https://www.hindustantimes.com/interior-designs",
+        },
+        {
+          id: 6,
+          img: "https://images.unsplash.com/photo-1599850843589-5c18eb5803f5?q=80&w=500&auto=format", // Architectural Digest Award Photo
+          title: "Architectural Digest - Excellence in Architecture",
+          content:
+            "Honored by Architectural Digest for creative excellence in modern architecture and interior solutions.",
+          link: "https://www.architecturaldigest.com/awards",
+        },
+      
+        ]
   );
 
   const sendToBack = (id) => {
@@ -84,9 +129,11 @@ export default function Stack({
             onSendToBack={() => sendToBack(card.id)}
             sensitivity={sensitivity}
           >
+    
+
+            {/* Page 2 - News Content */}
             <motion.div
-              className="card"
-              onClick={() => sendToBackOnClick && sendToBack(card.id)}
+              className="card bg-white shadow-lg rounded-lg overflow-hidden"
               animate={{
                 rotateZ: (cards.length - index - 1) * 4 + randomRotate,
                 scale: 1 + index * 0.06 - cards.length * 0.06,
@@ -103,11 +150,27 @@ export default function Stack({
                 height: cardDimensions.height,
               }}
             >
+              {/* Image Section */}
               <img
                 src={card.img}
                 alt={`card-${card.id}`}
-                className="card-image"
+                className="w-full h-[60%]  object-cover"
+                draggable={false}
               />
+
+              {/* Text Section */}
+              <div className="p-4 h-[40%] flex flex-col justify-between">
+                <h3 className="text-lg font-bold text-[#8F5735] mb-2">
+                  {card.title}
+                </h3>
+                <p className="text-sm text-gray-600">{card.content}</p>
+                <button
+                  onClick={() => (window.location.href = card.link)}
+                  className="mt-3 px-4 py-2 bg-[#8F5735] text-white rounded hover:bg-[#723e2a] transition"
+                >
+                  Learn More
+                </button>
+              </div>
             </motion.div>
           </CardRotate>
         );

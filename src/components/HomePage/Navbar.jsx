@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Logo from "@assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, Facebook, Instagram, Twitter } from "lucide-react";
+import { Menu, Facebook, Instagram, Twitter, House } from "lucide-react";
 import Sidebar from "@/components/SideBar"; 
 
-import SplitText from "../ReactBit/SplitText";
+import SplitText from "../../ReactBit/SplitText";
 
 // ✅ Navbar ke links ka data
 const navLinks = [
@@ -15,11 +15,10 @@ const navLinks = [
   { name: "Contact Us", path: "/contact" },
 ];
 
-// ✅ Social icons ka data
 const socialIcons = [
   { name: "Facebook", icon: <Facebook />, link: "https://facebook.com" },
   { name: "Instagram", icon: <Instagram />, link: "https://instagram.com" },
-  { name: "Twitter", icon: <Twitter />, link: "https://twitter.com" },
+
 ];
 
 function Navbar() {
@@ -59,20 +58,32 @@ function Navbar() {
       ))}
     </nav>
   
-    {/* Social Icons */}
-    <div className="hidden md:flex space-x-4">
-      {socialIcons.map((social, index) => (
+ {/* Social Icons */}
+ <div className="hidden md:flex space-x-4">
+        {socialIcons.map((social, index) => (
+          <a
+            key={index}
+            href={social.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-lg border border-[#8f5735] hover:shadow-lg text-gray-500 hover:text-[#8f5735]"
+          >
+            {social.icon}
+          </a>
+        ))}
         <a
-          key={index}
-          href={social.link}
+          href="https://www.houzz.in/"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 rounded-lg border border-[#8f5735] hover:shadow-lg text-gray-500 hover:text-[#8f5735]"
         >
-          {social.icon}
+          <img
+            src="https://static.lsabisaau.com/satva-living/images/houze.png"
+            alt="Houzz"
+            className="w-6 h-6"
+          />
         </a>
-      ))}
-    </div>
+      </div>
   
     {/* Mobile Menu Button */}
     <button

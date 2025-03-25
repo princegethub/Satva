@@ -1,7 +1,7 @@
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { useState, useEffect } from "react";
-import AnimatedContent from "../ReactBit/AnimatedDiv";
+import AnimatedContent from "../../ReactBit/AnimatedDiv";
 
 const images = [
   {
