@@ -9,13 +9,13 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # ✅ Required for GITHUB_TOKEN to push
+      contents: write  # ✅ Required for pushing to gh-pages
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -29,6 +29,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.KEY }} # ✅ Built-in token works with correct permissions
+          github_token: ${{ secrets.GITHUB_TOKEN }} # ✅ Built-in token
           publish_dir: ./dist
           publish_branch: gh-pages
