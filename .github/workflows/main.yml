@@ -43,10 +43,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: poduction file
-          path: ./build
+          path: ./dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.KEY }} #this is the key of the access token
-          publish_dir: ./build
+          publish_dir: ./dist
