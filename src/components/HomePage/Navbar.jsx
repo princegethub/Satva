@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "@assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, Facebook, Instagram, Twitter, House } from "lucide-react";
-import Sidebar from "@/components/Sidebar";``
+import Sidebar from "@/components/Sidebar.jsx";
 
 // ✅ Navbar ke links ka data
 const navLinks = [
@@ -16,7 +16,6 @@ const navLinks = [
 const socialIcons = [
   { name: "Facebook", icon: <Facebook />, link: "https://facebook.com" },
   { name: "Instagram", icon: <Instagram />, link: "https://instagram.com" },
-
 ];
 
 function Navbar() {
