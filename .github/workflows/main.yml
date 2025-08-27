@@ -1,4 +1,6 @@
 name: CI/CD for react Satva 
+permissions:
+  contents: write
 
 on:
   push:
