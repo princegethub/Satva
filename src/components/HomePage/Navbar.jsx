@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "@assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, Facebook, Instagram, Twitter, House } from "lucide-react";
-import Sidebar from "@/components/Sidebar.jsx";
+import Sidebar from "@/components/Sidebar";
 
 // ✅ Navbar ke links ka data
 const navLinks = [
