@@ -6,6 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: '/Satva/', // <-- IMPORTANT
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),      // "@/..." ke liye "src" ko resolve karega
